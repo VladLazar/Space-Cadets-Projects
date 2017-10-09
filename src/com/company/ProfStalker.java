@@ -80,7 +80,7 @@ public class ProfStalker {
     }
 
     private void printOutput() {
-        if (professorName == "") {
+        if (professorName.equals("")) {
             System.out.println("Could not find person name.");
         }
 
