@@ -80,6 +80,10 @@ public class ProfStalker {
     }
 
     private void printOutput() {
+        if (professorName == "") {
+            System.out.println("Could not find person name.");
+        }
+
         try (BufferedWriter out = new BufferedWriter(new OutputStreamWriter(System.out))) {
             out.newLine();
             out.write(professorName, 0, professorName.length());
